@@ -4,7 +4,8 @@ from tkinter import simpledialog
 from tkinter import filedialog
 from tkinter import messagebox
 
-gpg = gnupg.GPG(gnupghome="/home/miki/.gnupg")
+# gnupghome="/home/miki/.gnupg"
+gpg = gnupg.GPG()
 gpg.encoding = "utf-8"
 encrypted_folder_path = "./encrypted/"
 decrypted_folder_path = "./decrypted/"

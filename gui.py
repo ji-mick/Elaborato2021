@@ -126,7 +126,7 @@ def dictionary_to_string(index, flag=False):
     return s
 
 
-def utility(e):
+def utilityV2(e):
     email.destroy()
     openEmail(e)
 
@@ -148,7 +148,7 @@ def initUI():
 
     receiveEmail.receive_email(list_email, main_window)
     list_email.config(yscrollcommand=scrollbar.set)
-    list_email.bind('<<ListboxSelect>>', lambda e: utility(e))
+    list_email.bind('<<ListboxSelect>>', lambda e: utilityV2(e))
     btn_new_email = Button(frame_container, text="+", command=send_email_gui)
     btn_new_email.pack(side=RIGHT, pady=20, padx=30)
     btn_decrypt = Button(frame_container, text="Decifra",
